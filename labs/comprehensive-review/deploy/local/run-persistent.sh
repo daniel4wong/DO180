@@ -13,4 +13,4 @@ sudo semanage fcontext -a -t container_file_t '/tmp/nexus/sonatype-work(/.*)?'
 sudo restorecon -Rv /tmp/nexus/sonatype-work
 
 #run the pod in background created from the local image
-podman run --name nexus -d -v /tmp/nexus/sonatype-work:/opt/nexus/sonatype-work -p 8081:8081 localhost/nexus
+podman run --name nexus -d -v /tmp/nexus/sonatype-work:/opt/nexus/sonatype-work -p 18081:8081 localhost/nexus
